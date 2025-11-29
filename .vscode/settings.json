@@ -1,0 +1,27 @@
+{
+  "[python]": {
+    "editor.codeActionsOnSave": {
+      "source.convertImportFormat": "explicit",
+      "source.fixAll": "explicit",
+      "source.fixAll.pylance": "explicit",
+      "source.fixAll.ruff": "explicit",
+      "source.sort.json": "explicit",
+      "source.unusedImports": "explicit"
+    },
+    "editor.defaultFormatter": "charliermarsh.ruff"
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.formatOnSaveMode": "modificationsIfAvailable",
+  "editor.formatOnType": true,
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": false,
+  "files.trimTrailingWhitespace": true,
+  "python.analysis.autoFormatStrings": true,
+  "python.analysis.autoImportCompletions": true,
+  "python.analysis.autoIndent": true,
+  "python.analysis.typeCheckingMode": "standard",
+  "python.testing.pytestArgs": [],
+  "python.testing.pytestEnabled": true
+}

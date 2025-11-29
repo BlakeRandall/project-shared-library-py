@@ -1,0 +1,11 @@
+{
+  "recommendations": [
+    "ms-python.python",
+    "ms-python.debugpy",
+    "ms-python.vscode-python-envs",
+    "ms-python.vscode-pylance",
+    "ms-python.isort",
+    "charliermarsh.ruff",
+    "esbenp.prettier-vscode"
+  ]
+}

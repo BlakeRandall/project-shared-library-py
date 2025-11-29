@@ -1,0 +1,7 @@
+pylint
+pytest
+pytest-cov
+pytest-asyncio
+anyio
+ruff
+pre-commit

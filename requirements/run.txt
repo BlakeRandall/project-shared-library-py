@@ -1,0 +1,13 @@
+fastapi
+fastmcp
+langchain
+langchain-classic
+langchain-community
+langchain-core
+langchain-experimental
+langchain-mcp-adapters
+langgraph
+mcp
+pydantic
+pydantic_settings
+pyyaml

@@ -1,0 +1,72 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "python-tools",
+      "type": "process",
+      "command": "/usr/bin/env",
+      "args": [
+        "python",
+        "-m",
+        "pip",
+        "install",
+        "-r",
+        "${workspaceFolder}/requirements.txt"
+      ],
+      "hide": true,
+      "isBackground": false,
+      "isBuildCommand": true,
+      "options": {},
+      "runOptions": {
+        "instanceLimit": 1,
+        "instancePolicy": "silent",
+        "runOn": "folderOpen"
+      }
+    },
+    {
+      "label": "python-build",
+      "dependsOn": ["python-tools"],
+      "type": "process",
+      "command": "/usr/bin/env",
+      "args": ["python", "-m", "build", "-s", "-w"],
+      "hide": false,
+      "isBackground": false,
+      "isBuildCommand": true,
+      "options": {},
+      "runOptions": {
+        "instanceLimit": 1,
+        "instancePolicy": "silent"
+      }
+    },
+    {
+      "label": "python-install",
+      "dependsOn": ["python-tools"],
+      "type": "process",
+      "command": "/usr/bin/env",
+      "args": ["python", "-m", "pip", "install", "."],
+      "hide": false,
+      "isBackground": false,
+      "isBuildCommand": true,
+      "options": {},
+      "runOptions": {
+        "instanceLimit": 1,
+        "instancePolicy": "silent"
+      }
+    },
+    {
+      "label": "python-test",
+      "dependsOn": ["python-install"],
+      "type": "process",
+      "command": "/usr/bin/env",
+      "args": ["python", "-m", "pytest"],
+      "hide": false,
+      "isBackground": false,
+      "isBuildCommand": true,
+      "options": {},
+      "runOptions": {
+        "instanceLimit": 1,
+        "instancePolicy": "silent"
+      }
+    }
+  ]
+}
